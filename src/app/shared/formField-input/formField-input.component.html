@@ -1,0 +1,23 @@
+<h1>Inputs</h1>
+
+<mat-form-field>
+  <mat-label>Email</mat-label>
+  <input type="text" matInput placeholder="E-mail">
+  <mat-icon matSuffix>home</mat-icon>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input type="text" matInput [(ngModel)]="fieldName" placeholder="Name">
+  <button *ngIf="fieldName" mat-icon-button matSuffix aria-label="Clear" (click)="fieldName=''" >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+
+<mat-form-field hintLabel="Máximo 10 caracteres">
+  <mat-label>Email</mat-label>
+  <input type="text" matInput placeholder="E-mail" maxlength="10" #email>
+  <mat-hint align="end">{{ email.value.length }}/{{ email.maxLength }}</mat-hint>
+</mat-form-field>
+
+

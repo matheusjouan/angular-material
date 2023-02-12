@@ -1,0 +1,25 @@
+<h1>Progress Bar</h1>
+<mat-progress-bar mode="determinate" [value]="loadingPercent" color="primary"></mat-progress-bar>
+
+
+<h1 style="margin-top: 30px;">Espera 2s (query) para iniciar a Progressão do ProgressBar(determinate)</h1>
+
+<mat-progress-bar [mode]="progressMode" color="warn" [value]="loadingPercent"></mat-progress-bar>
+
+<h1 style="margin-top: 30px;">Progress Bar com Buffer</h1>
+
+<mat-progress-bar
+  mode="buffer"
+  [value]="loadingPercentBuffer.loadingPercent"
+  [bufferValue]="loadingPercentBuffer.loadingBufferPercent"
+  color="primary"></mat-progress-bar>
+
+
+<h1 style="margin-top: 30px;">Spinner</h1>
+
+<mat-spinner color="accent"></mat-spinner>
+<mat-progress-spinner color="primary" mode="indeterminate"></mat-progress-spinner>
+
+
+<h1 style="margin-top: 30px;">Progress Spinner</h1>
+<mat-progress-spinner color="primary" [value]="loadingPercent"></mat-progress-spinner>

@@ -1,0 +1,51 @@
+<h1>Simple Tabs</h1>
+
+<mat-tab-group mat-align-tabs="center" animationDuration="1000ms" mat-stretch-tabs="false">
+  <mat-tab label="tabName">
+    Ae
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon style="margin-right: 5px;">settings</mat-icon>
+      tabName
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="tabName">
+    Ae
+  </mat-tab>
+</mat-tab-group>
+
+<br><br>
+<h1>Tabs - Strech and Bellow</h1>
+
+<mat-tab-group
+ mat-stretch-tabs="false"
+ mat-align-tabs="start"
+ class="mat-elevation-z4"
+ color="warn"
+ backgroundColor="primary"
+>
+  <mat-tab label="tabName">
+    <div>
+      Conteúdo
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <div>
+      <ng-template mat-tab-label>
+        <mat-icon style="margin-right: 5px;">settings</mat-icon>
+        Configurações
+      </ng-template>
+      Conteúdo
+    </div>
+  </mat-tab>
+  <mat-tab>
+    <div>
+      <ng-template mat-tab-label>
+        <mat-icon style="margin-right: 5px;">person</mat-icon>
+        Usuário
+      </ng-template>
+      Conteúdo
+    </div>
+  </mat-tab>
+</mat-tab-group>
